@@ -11,7 +11,10 @@ let cardsEl = document.getElementById("cards-el")
 
 // Create a function, getRandomCard(), that always returns the number 5
 
-
+function getRandomCard() {
+    let card = Math.floor(Math.random * 13) + 1
+    return card
+}
 function startGame() {
     renderGame()
 }
@@ -37,7 +40,7 @@ function renderGame() {
 
 
 function newCard() {
-    let card = Math.floor(Math.random * 13) + 1
+    let card = getRandomCard()
     sum += card
     cards.push(card)
     console.log(cards)

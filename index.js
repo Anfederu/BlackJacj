@@ -37,7 +37,7 @@ function renderGame() {
 
 
 function newCard() {
-    let card = 6
+    let card = Math.floor(Math.random * 13) + 1
     sum += card
     cards.push(card)
     console.log(cards)
